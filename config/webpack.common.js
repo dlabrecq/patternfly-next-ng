@@ -72,27 +72,25 @@ module.exports = {
       {
         test: /\.(woff2|woff|ttf|eot|svg)$/,
         use: {
-          loader: 'url-loader',
-          query: {
-            limit: 3000,
-            // includePaths: [
-            //   path.resolve(__dirname, "../node_modules/patternfly/dist/fonts/")
-            // ],
-            name: 'assets/fonts/[name].[ext]'
-          }
-        },
-        exclude: path.resolve(__dirname, "../src/demo/images/")
-      },
-      {
-        test: /\.(jpg|png|svg|gif|jpeg)$/,
-        use: {
-          loader: 'url-loader',
+          loader: "url-loader",
           query: {
             limit: 3000,
             includePaths: [
-              path.resolve(__dirname, "../src/assets/images/")
+              path.resolve(__dirname, "../node_modules/patternfly/dist/fonts/")
             ],
-            name: 'assets/images/[name].[ext]'
+            name: 'assets/fonts/[name].[ext]'
+          }
+        },
+        exclude: path.resolve(__dirname, "../src/assets/images/")
+      }, {
+        test: /\.(jpg|png|svg|gif|jpeg)$/,
+        use: {
+          loader: "url-loader",
+          query: {
+            limit: 3000,
+            includePaths: [
+                path.resolve(__dirname, "../src/assets/images/")
+            ]
           }
         },
         exclude: path.resolve(__dirname, "../node_modules/patternfly/dist/fonts/")
