@@ -26,9 +26,7 @@
           <a [ngClass]="{'collapsed': isCollapsed(item.id), 'expanded': !isCollapsed(item.id)}"
              (click)="toggleCollapsed($event, item.id)"
              *ngIf="item.children !== undefined">{{item.title}}</a>
-          <ul class="collapse"
-              [collapse]="isCollapsed(item.id)"
-              [ngClass]="{'in': !isCollapsed(item.id)}"
+          <ul [ngClass]="{'hide': isCollapsed(item.id)}"
               *ngFor="let child of item.children">
             <li [ngClass]="{'active': isPageSelected([child.id])}">
               <a (click)="selectNavPage($event, child.path)">{{child.title}}</a>
@@ -37,6 +35,7 @@
         </li>
       </ul>
     </li>
+    <!--
     <li class="secondary-menu" *ngIf="isNavItemSelected('directives')">
       <a class="secondary-menu-toggle"
          (click)="selectNavItem($event, 'getstarted')"><span class="secondary-menu-toggle-icon"></span>Directives</a>
@@ -47,9 +46,7 @@
           <a [ngClass]="{'collapsed': isCollapsed(item.id), 'expanded': !isCollapsed(item.id)}"
              (click)="toggleCollapsed($event, item.id)"
              *ngIf="item.children !== undefined">{{item.title}}</a>
-          <ul class="collapse"
-              [collapse]="isCollapsed(item.id)"
-              [ngClass]="{'in': !isCollapsed(item.id)}"
+          <ul [ngClass]="{'hide': isCollapsed(item.id)}"
               *ngFor="let child of item.children">
             <li [ngClass]="{'active': isPageSelected([child.id])}">
               <a (click)="selectNavPage($event, child.path)">{{child.title}}</a>
@@ -58,6 +55,7 @@
         </li>
       </ul>
     </li>
+    -->
     <li class="secondary-menu" *ngIf="isNavItemSelected('pipes')">
       <a class="secondary-menu-toggle"
          (click)="selectNavItem($event, 'getstarted')"><span class="secondary-menu-toggle-icon"></span>Pipes</a>
@@ -68,9 +66,7 @@
           <a [ngClass]="{'collapsed': isCollapsed(item.id), 'expanded': !isCollapsed(item.id)}"
              (click)="toggleCollapsed($event, item.id)"
              *ngIf="item.children !== undefined">{{item.title}}</a>
-          <ul class="collapse"
-              [collapse]="isCollapsed(item.id)"
-              [ngClass]="{'in': !isCollapsed(item.id)}"
+          <ul [ngClass]="{'hide': isCollapsed(item.id)}"
               *ngFor="let child of item.children">
             <li [ngClass]="{'active': isPageSelected([child.id])}">
               <a (click)="selectNavPage($event, child.path)">{{child.title}}</a>
@@ -79,6 +75,7 @@
         </li>
       </ul>
     </li>
+    <!--
     <li class="secondary-menu" *ngIf="isNavItemSelected('services')">
       <a class="secondary-menu-toggle"
          (click)="selectNavItem($event, 'getstarted')"><span class="secondary-menu-toggle-icon"></span>Services</a>
@@ -89,9 +86,7 @@
           <a [ngClass]="{'collapsed': isCollapsed(item.id), 'expanded': !isCollapsed(item.id)}"
              (click)="toggleCollapsed($event, item.id)"
              *ngIf="item.children !== undefined">{{item.title}}</a>
-          <ul class="collapse"
-              [collapse]="isCollapsed(item.id)"
-              [ngClass]="{'in': !isCollapsed(item.id)}"
+          <ul [ngClass]="{'hide': isCollapsed(item.id)}"
               *ngFor="let child of item.children">
             <li [ngClass]="{'active': isPageSelected([child.id])}">
               <a (click)="selectNavPage($event, child.path)">{{child.title}}</a>
@@ -100,5 +95,6 @@
         </li>
       </ul>
     </li>
+    -->
   </ul>
 </nav>

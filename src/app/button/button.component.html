@@ -1,0 +1,23 @@
+<button class="pf-c-button"
+        [attr.form]="form"
+        [attr.formaction]="formAction"
+        [attr.formenctype]="formEncType"
+        [attr.formmethod]="formMethod"
+        [attr.formnovalidate]="formNoValidate"
+        [attr.formtarget]="formTarget"
+        [autofocus]="autofocus"
+        [disabled]="disabled"
+        [id]="id"
+        [name]="name"
+        [ngClass]="{
+          'pf-is-danger': style === 'danger',
+          'pf-is-primary': style === 'primary',
+          'pf-is-secondary': style === 'secondary',
+          'pf-is-tertiary': style === 'tertiary'
+        }"
+        [title]="tooltip"
+        [type]="type"
+        [value]="value"
+        (click)="handleClick($event)">
+  <ng-content></ng-content>
+</button>

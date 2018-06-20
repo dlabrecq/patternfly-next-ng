@@ -1,32 +1,32 @@
-[![Build Status](https://travis-ci.org/patternfly/patternfly-ng.svg?branch=master)](https://travis-ci.org/patternfly/patternfly-ng) [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
+[![Build Status](https://travis-ci.org/patternfly/patternfly-next-ng.svg?branch=master)](https://travis-ci.org/patternfly/patternfly-next-ng) [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
-Welcome to PatternFly-Ng.  This is a library of common Angular components for use with the PatternFly reference implementation. Below is information on how to get started using PatternFly-ng.  If you wish to contribute to PatternFly-ng, please go to our [Contributions page][contributing].
+Welcome to PatternFly-Next-Ng.  This is a library of common Angular components for use with the PatternFly reference implementation. Below is information on how to get started using PatternFly-Next-Ng.  If you wish to contribute to PatternFly-Next-Ng, please go to our [Contributions page][contributing].
 
 - Web site: https://www.patternfly.org
-- API Docs: http://www.patternfly.org/patternfly-ng/
-- Build Status: https://travis-ci.org/patternfly/patternfly-ng.svg?branch=master
+- API Docs: http://www.patternfly.org/patternfly-next-ng/
+- Build Status: https://travis-ci.org/patternfly/patternfly-next-ng.svg?branch=master
 
 
-### Using PatternFly-ng In Your Application
+### Using PatternFly-Next-Ng In Your Application
 
-This example demonstrates using the Angular-cli to get started with PatternFly-ng
+This example demonstrates using the Angular-cli to get started with PatternFly-Next-Ng
 
 1. Installing angular-cli  
 *Note*: you can skip this part if you already have generated an Angular application using `ng-cli` and webpack
   
  ```bash
  npm i -g @angular/cli
- ng new patternfly-ng-app
- cd patternfly-ng-app
+ ng new patternfly-next-ng-app
+ cd patternfly-next-ng-app
  ng serve
  ```
 
-2. Install patternfly-ng
+2. Install patternfly-next-ng
    ```bash
-     npm install patternfly-ng --save
+     npm install patternfly-next-ng --save
    ```
 
-3. Add patternfly-ng dependencies
+3. Add patternfly-next-ng dependencies
  
  - install `patternfly`
 
@@ -34,13 +34,13 @@ This example demonstrates using the Angular-cli to get started with PatternFly-n
    npm install patternfly --save
  ```
  
-4. Add a patternfly-ng component
+4. Add a patternfly-next-ng component
 - open `src/app/app.module.ts` and add
 
 ```typescript
-import { NotificationModule } from 'patternfly-ng/notification';
+import { NotificationModule } from 'patternfly-next-ng/notification';
 // Or
-import { NotificationModule } from 'patternfly-ng';
+import { NotificationModule } from 'patternfly-next-ng';
 ...
 
 @NgModule({
@@ -57,7 +57,7 @@ import { NotificationModule } from 'patternfly-ng';
 
         "./node_modules/patternfly/dist/css/patternfly.min.css",
         "./node_modules/patternfly/dist/css/patternfly-additions.min.css",
-        "./node_modules/patternfly-ng/dist/css/patternfly-ng.min.css",
+        "./node_modules/patternfly-next-ng/dist/css/patternfly-next-ng.min.css",
         "styles.css",
       ],
 ```
@@ -83,7 +83,7 @@ import { NotificationModule } from 'patternfly-ng';
         "./node_modules/dragula/dist/dragula.min.css",
         "./node_modules/patternfly/dist/css/patternfly.min.css",
         "./node_modules/patternfly/dist/css/patternfly-additions.min.css",
-        "./node_modules/patternfly-ng/dist/css/patternfly-ng.min.css",
+        "./node_modules/patternfly-next-ng/dist/css/patternfly-next-ng.min.css",
         "styles.css",
       ],
 ```
@@ -100,8 +100,8 @@ import { NotificationModule } from 'patternfly-ng';
 
 ## <a name="question"></a> Do you have a question?
  - Search our [GitHub issues][github-issues]
- - Join our patternfly-ng channel on [Slack](http://slack.patternfly.org)
+ - Join our patternfly-next-ng channel on [Slack](http://slack.patternfly.org)
  - Join our mailing-list following the instructions on [patternfly.org](http://www.patternfly.org/community/)
 
-[contributing]: https://github.com/patternfly/patternfly-ng/blob/master/CONTRIBUTING.md
-[github-issues]: https://github.com/patternfly/patternfly-ng/issues
+[contributing]: https://github.com/patternfly/patternfly-next-ng/blob/master/CONTRIBUTING.md
+[github-issues]: https://github.com/patternfly/patternfly-next-ng/issues

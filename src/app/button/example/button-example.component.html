@@ -1,0 +1,87 @@
+<div class="padding-15">
+  <div class="row">
+    <div class="col-xs-12">
+      <h4>Button Component Example</h4>
+      <hr>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="form-group">
+        <pfng-button [disabled]="disabled"
+                     [id]="'btn1'"
+                     [name]="'btn1'"
+                     [tooltip]="'This is a default button'"
+                     [value]="'default'"
+                     (onClick)="handleClick($event)">Default</pfng-button>
+        <pfng-button [disabled]="disabled"
+                     [id]="'btn2'"
+                     [name]="'btn2'"
+                     [style]="'primary'"
+                     [tooltip]="'This is a primary button'"
+                     [value]="'primary'"
+                     (onClick)="handleClick($event)">Primary</pfng-button>
+        <pfng-button [disabled]="disabled"
+                     [id]="'btn3'"
+                     [name]="'btn3'"
+                     [style]="'secondary'"
+                     [tooltip]="'This is a secondary button'"
+                     [value]="'secondary'"
+                     (onClick)="handleClick($event)">Secondary</pfng-button>
+        <pfng-button [disabled]="disabled"
+                     [id]="'btn4'"
+                     [name]="'btn4'"
+                     [style]="'tertiary'"
+                     [tooltip]="'This is a tertiary button'"
+                     [value]="'tertiary'"
+                     (onClick)="handleClick($event)">Tertiary</pfng-button>
+        <pfng-button [disabled]="disabled"
+                     [id]="'btn5'"
+                     [name]="'btn5'"
+                     [style]="'danger'"
+                     [tooltip]="'This is a danger button'"
+                     [value]="'danger'"
+                     (onClick)="handleClick($event)">Danger</pfng-button>
+      </div>
+    </div>
+  </div>
+  <div class="row padding-top-10">
+    <div class="col-sm-12">
+      <h4 class="actions-label">Settings</h4>
+      <hr/>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <form role="form">
+        <div class="form-group">
+          <label class="checkbox-inline">
+            <input id="cb1" name="cb1" type="checkbox"
+                   [(ngModel)]="disabled">Disabled
+          </label>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="row padding-top-10">
+    <div class="col-sm-12">
+      <h4 class="actions-label">Actions</h4>
+      <hr/>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <textarea rows="3" class="col-sm-12">{{actionsText}}</textarea>
+    </div>
+  </div>
+  <div>
+    <include-content src="src/app/button/example/button-example.component.html"></include-content>
+  </div>
+  <div>
+    <include-content src="src/app/button/example/button-example.component.ts"></include-content>
+  </div>
+  <div>
+    <h4>API Docs</h4>
+    <iframe class="demoframe" src="docs/classes/buttoncomponent.html"></iframe>
+  </div>
+</div>

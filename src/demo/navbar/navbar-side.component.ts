@@ -50,7 +50,7 @@ export class NavbarSideComponent implements OnInit {
 
   isCollapsed(name: string): boolean {
     if (this._collapsed[name] === undefined) {
-      this._collapsed[name] = false; // default open
+      this._collapsed[name] = true;
     }
     return this._collapsed[name];
   }

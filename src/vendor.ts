@@ -15,9 +15,7 @@ import 'highlight.js/styles/github.css';
 
 // Other vendors for example jQuery, Lodash or Bootstrap
 // You can import js, ts, css, sass, ...
-import 'dragula/dist/dragula.css';
+import '@patternfly/patternfly-next-workshop/dist/patternfly.css';
 import 'patternfly/dist/css/patternfly.css';
 import 'patternfly/dist/css/patternfly-additions.css';
-import '../src/assets/stylesheets/patternfly-ng.less';
-
-require('patternfly/dist/js/patternfly-settings');
+import '../src/assets/stylesheets/patternfly-ng.scss';

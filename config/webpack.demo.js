@@ -113,6 +113,7 @@ module.exports = {
           loader: 'less-loader',
           options: {
             paths: [
+              path.resolve(__dirname, "../node_modules"),
               path.resolve(__dirname, "../node_modules/patternfly/dist/less"),
               path.resolve(__dirname, "../node_modules/patternfly/dist/less/dependencies"),
               path.resolve(__dirname, "../node_modules/patternfly/dist/less/dependencies/bootstrap"),
@@ -121,6 +122,31 @@ module.exports = {
             sourceMap: true
           }
         }]
+      },
+
+      {
+        test: /\.scss/,
+        use: [
+          {
+            loader: 'css-to-string-loader'
+          },
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMap: true,
+              context: '/'
+            }
+          },
+          {
+            loader: 'sass-loader',
+            options: {
+              paths: [
+                path.resolve(__dirname, "../node_modules/patternfly/dist/sass")
+              ],
+              sourceMap: true
+            }
+          }
+        ]
       },
 
       /**
