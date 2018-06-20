@@ -1,1 +1,4 @@
-@import '../../../node_modules/@patternfly/patternfly-next-workshop/dist/patternfly.scss';
+$pf-global--fontawesome-path: "../../../node_modules/@patternfly/patternfly-next/assets/icons";
+$pf-global--font-path: "../../../node_modules/@patternfly/patternfly-next/assets/fonts";
+
+@import "../../../node_modules/@patternfly/patternfly-next/patternfly-full.scss";

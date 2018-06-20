@@ -79,7 +79,7 @@
     "rxjs": "^6.1.0"
   },
   "dependencies": {
-    "@patternfly/patternfly-next-workshop": "0.0.4",
+    "@patternfly/patternfly-next": "1.0.7",
     "lodash": "^4.17.10",
     "patternfly": "^3.51.0"
   },
@@ -115,6 +115,7 @@
     "cz-conventional-changelog": "2.1.0",
     "del": "3.0.0",
     "file-loader": "1.1.11",
+    "font-awesome": "4.7.0",
     "font-awesome-sass": "4.7.0",
     "gulp": "4.0.0",
     "gulp-changed": "3.2.0",

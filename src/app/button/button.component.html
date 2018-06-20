@@ -10,10 +10,13 @@
         [id]="id"
         [name]="name"
         [ngClass]="{
-          'pf-is-danger': style === 'danger',
-          'pf-is-primary': style === 'primary',
-          'pf-is-secondary': style === 'secondary',
-          'pf-is-tertiary': style === 'tertiary'
+          'pf-m-danger': style === 'danger',
+          'pf-m-primary': style === 'primary',
+          'pf-m-secondary': style === 'secondary',
+          'pf-m-tertiary': style === 'tertiary',
+          'pf-m-link': style === 'link',
+          'pf-m-action': style === 'action',
+          'pf-m-disabled': style === 'disabled'
         }"
         [title]="tooltip"
         [type]="type"

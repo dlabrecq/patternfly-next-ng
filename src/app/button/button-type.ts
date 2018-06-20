@@ -26,6 +26,21 @@ export class ButtonStyle {
    * Warning style type
    */
   static readonly TERTIARY: string = 'tertiary';
+
+  /**
+   * Link style type
+   */
+  static readonly LINK: string = 'link';
+
+  /**
+   * Action style type
+   */
+  static readonly ACTION: string = 'action';
+
+  /**
+   * Disabled style type
+   */
+  static readonly DISABLED: string = 'disabled';
 }
 
 /**

@@ -15,7 +15,7 @@ import 'highlight.js/styles/github.css';
 
 // Other vendors for example jQuery, Lodash or Bootstrap
 // You can import js, ts, css, sass, ...
-import '@patternfly/patternfly-next-workshop/dist/patternfly.css';
+import '@patternfly/patternfly-next/patternfly-full.css';
 import 'patternfly/dist/css/patternfly.css';
 import 'patternfly/dist/css/patternfly-additions.css';
 import '../src/assets/stylesheets/patternfly-ng.scss';

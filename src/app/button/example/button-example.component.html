@@ -42,6 +42,20 @@
                      [tooltip]="'This is a danger button'"
                      [value]="'danger'"
                      (onClick)="handleClick($event)">Danger</pfng-button>
+        <pfng-button [disabled]="disabled"
+                     [id]="'btn6'"
+                     [name]="'btn6'"
+                     [style]="'link'"
+                     [tooltip]="'This is a link button'"
+                     [value]="'link'"
+                     (onClick)="handleClick($event)"><i class="fa fa-plus-circle"></i> Link button</pfng-button>
+        <pfng-button [disabled]="disabled"
+                     [id]="'btn7'"
+                     [name]="'btn7'"
+                     [style]="'action'"
+                     [tooltip]="'This is an action button'"
+                     [value]="'action'"
+                     (onClick)="handleClick($event)"><i class="fa fa-times"></i></pfng-button>
       </div>
     </div>
   </div>

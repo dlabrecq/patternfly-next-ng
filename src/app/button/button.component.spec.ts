@@ -44,7 +44,7 @@ describe('Button component - ', () => {
     comp.style = ButtonStyle.DANGER;
     fixture.detectChanges();
 
-    let button = fixture.debugElement.query(By.css('.pf-c-button.pf-is-danger'));
+    let button = fixture.debugElement.query(By.css('.pf-c-button.pf-m-danger'));
     expect(button).not.toBeNull();
   });
 
@@ -52,7 +52,7 @@ describe('Button component - ', () => {
     comp.style = ButtonStyle.PRIMARY;
     fixture.detectChanges();
 
-    let button = fixture.debugElement.query(By.css('.pf-c-button.pf-is-primary'));
+    let button = fixture.debugElement.query(By.css('.pf-c-button.pf-m-primary'));
     expect(button).not.toBeNull();
   });
 
@@ -60,7 +60,7 @@ describe('Button component - ', () => {
     comp.style = ButtonStyle.SECONDARY;
     fixture.detectChanges();
 
-    let button = fixture.debugElement.query(By.css('.pf-c-button.pf-is-secondary'));
+    let button = fixture.debugElement.query(By.css('.pf-c-button.pf-m-secondary'));
     expect(button).not.toBeNull();
   });
 
@@ -68,7 +68,23 @@ describe('Button component - ', () => {
     comp.style = ButtonStyle.TERTIARY;
     fixture.detectChanges();
 
-    let button = fixture.debugElement.query(By.css('.pf-c-button.pf-is-tertiary'));
+    let button = fixture.debugElement.query(By.css('.pf-c-button.pf-m-tertiary'));
+    expect(button).not.toBeNull();
+  });
+
+  it('should have type link', () => {
+    comp.style = ButtonStyle.LINK;
+    fixture.detectChanges();
+
+    let button = fixture.debugElement.query(By.css('.pf-c-button.pf-m-link'));
+    expect(button).not.toBeNull();
+  });
+
+  it('should have type action', () => {
+    comp.style = ButtonStyle.ACTION;
+    fixture.detectChanges();
+
+    let button = fixture.debugElement.query(By.css('.pf-c-button.pf-m-action'));
     expect(button).not.toBeNull();
   });
 
